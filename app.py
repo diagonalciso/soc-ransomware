@@ -145,7 +145,7 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soc-Ransomware — Ransomware Tracker</title>
+<title>SOC Ransomware — Ransomware Tracker</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0d1117;color:#e6edf3;font-family:'Segoe UI',monospace;font-size:13px}
@@ -229,7 +229,7 @@ tbody td{padding:8px 12px;vertical-align:middle}
 <body><a href="/manual" target="_blank" title="Manual / Help" style="position:fixed;top:12px;right:14px;z-index:99999;width:30px;height:30px;border-radius:50%;background:#161b22;border:1px solid #30363d;color:#58a6ff;font:700 16px/30px system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.4)" onmouseover="this.style.borderColor='#58a6ff'" onmouseout="this.style.borderColor='#30363d'">?</a>
 
 <header>
-  <h1>&#9760; Soc-Ransomware <span style="font-weight:400;opacity:.6;font-size:.6em">Ransomware Tracker</span></h1>
+  <h1>&#9760; SOC Ransomware <span style="font-weight:400;opacity:.6;font-size:.6em">Ransomware Tracker</span></h1>
   <span class="sub">live data via <a href="https://www.ransomware.live" target="_blank">ransomware.live</a> API &middot; cache 5 min</span>
 </header>
 
