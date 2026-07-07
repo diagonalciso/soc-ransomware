@@ -148,8 +148,8 @@ HTML = r"""<!DOCTYPE html>
 <title>Soc-Ransomware — Ransomware Tracker</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',monospace;font-size:13px}
-a{color:#388bfd;text-decoration:none}
+body{background:#0d1117;color:#e6edf3;font-family:'Segoe UI',monospace;font-size:13px}
+a{color:#58a6ff;text-decoration:none}
 a:hover{text-decoration:underline}
 header{background:#161b22;border-bottom:1px solid #30363d;padding:12px 20px;display:flex;align-items:center;gap:16px}
 header h1{font-size:16px;color:#f85149;font-weight:700;letter-spacing:1px}
@@ -162,11 +162,11 @@ header .sub{color:#8b949e;font-size:11px}
 .tabs{background:#161b22;border-bottom:1px solid #21262d;display:flex;padding:0 20px}
 .tab{padding:10px 16px;cursor:pointer;color:#8b949e;border-bottom:2px solid transparent;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .tab.active{color:#f85149;border-bottom-color:#f85149}
-.tab:hover{color:#c9d1d9}
+.tab:hover{color:#e6edf3}
 .toolbar{padding:10px 20px;background:#0d1117;display:flex;gap:10px;align-items:center;border-bottom:1px solid #21262d;flex-wrap:wrap}
-input[type=text]{background:#161b22;border:1px solid #30363d;color:#c9d1d9;padding:6px 10px;border-radius:4px;font-size:12px;width:260px;outline:none}
+input[type=text]{background:#161b22;border:1px solid #30363d;color:#e6edf3;padding:6px 10px;border-radius:4px;font-size:12px;width:260px;outline:none}
 input[type=text]:focus{border-color:#f85149}
-select{background:#161b22;border:1px solid #30363d;color:#c9d1d9;padding:6px 10px;border-radius:4px;font-size:12px;outline:none}
+select{background:#161b22;border:1px solid #30363d;color:#e6edf3;padding:6px 10px;border-radius:4px;font-size:12px;outline:none}
 .count-badge{color:#8b949e;font-size:11px;margin-left:auto}
 .panel{display:none}
 .panel.active{display:block}
@@ -179,7 +179,7 @@ tbody tr:hover{background:#161b22}
 tbody td{padding:8px 12px;vertical-align:middle}
 .group-badge{display:inline-block;background:#1c2128;border:1px solid #f85149;color:#f85149;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;text-transform:uppercase;cursor:pointer}
 .group-badge:hover{background:#f85149;color:#0d1117}
-.sector-badge{display:inline-block;background:#1c2128;border:1px solid #388bfd;color:#388bfd;padding:1px 6px;border-radius:3px;font-size:10px}
+.sector-badge{display:inline-block;background:#1c2128;border:1px solid #58a6ff;color:#58a6ff;padding:1px 6px;border-radius:3px;font-size:10px}
 .online-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3fb950;margin-right:5px}
 .offline-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f85149;margin-right:5px}
 .watch-row{background:#1a1500!important}
@@ -201,12 +201,12 @@ tbody td{padding:8px 12px;vertical-align:middle}
 #modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.88);z-index:1000;align-items:center;justify-content:center}
 #modal.open{display:flex}
 #modal img{max-width:90vw;max-height:85vh;border:2px solid #30363d;border-radius:4px}
-#modal .x{position:absolute;top:20px;right:28px;font-size:30px;cursor:pointer;color:#c9d1d9;line-height:1}
+#modal .x{position:absolute;top:20px;right:28px;font-size:30px;cursor:pointer;color:#e6edf3;line-height:1}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:20px}
 .stat-card{background:#161b22;border:1px solid #21262d;border-radius:6px;padding:16px}
 .stat-card h3{font-size:10px;text-transform:uppercase;color:#8b949e;letter-spacing:.8px;margin-bottom:12px}
 .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px}
-.bar-label{width:130px;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#c9d1d9}
+.bar-label{width:130px;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#e6edf3}
 .bar-track{flex:1;background:#21262d;border-radius:2px;height:7px}
 .bar-fill{background:#f85149;height:7px;border-radius:2px;min-width:2px}
 .bar-val{width:32px;text-align:right;font-size:11px;color:#8b949e}
@@ -215,10 +215,10 @@ tbody td{padding:8px 12px;vertical-align:middle}
 @keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
 .company-match-row{background:#001a1a!important}
 .company-match-row:hover{background:#002626!important}
-.company-match-badge{display:inline-block;background:#1c2128;border:1px solid #39d353;color:#39d353;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;text-transform:uppercase;margin-left:6px}
-.import-btn{background:#1c2128;border:1px solid #39d353;color:#39d353;padding:5px 10px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:600}
-.import-btn:hover{background:#39d353;color:#0d1117}
-.company-count{color:#39d353;font-size:11px;font-weight:600}
+.company-match-badge{display:inline-block;background:#1c2128;border:1px solid #3fb950;color:#3fb950;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;text-transform:uppercase;margin-left:6px}
+.import-btn{background:#1c2128;border:1px solid #3fb950;color:#3fb950;padding:5px 10px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:600}
+.import-btn:hover{background:#3fb950;color:#0d1117}
+.company-count{color:#3fb950;font-size:11px;font-weight:600}
 .pub-badge{display:inline-block;background:#1c2128;border:1px solid #f85149;color:#f85149;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;text-transform:uppercase}
 .pending-badge{display:inline-block;background:#1c2128;border:1px solid #d29922;color:#d29922;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:600;text-transform:uppercase}
 .countdown{color:#d29922;font-size:11px;font-weight:600}
@@ -240,7 +240,7 @@ tbody td{padding:8px 12px;vertical-align:middle}
   <div class="stat"><div class="val" id="st-month">—</div><div class="lbl">Victims This Month</div></div>
   <div class="stat"><div class="val" id="st-feed">—</div><div class="lbl">Recent Feed</div></div>
   <div class="stat"><div class="val" id="st-watched" style="color:#d29922">—</div><div class="lbl">Watched Hits</div></div>
-  <div class="stat"><div class="val" id="st-qilin" style="color:#a371f7">—</div><div class="lbl">Qilin Direct</div></div>
+  <div class="stat"><div class="val" id="st-qilin" style="color:#bc8cff">—</div><div class="lbl">Qilin Direct</div></div>
 </div>
 
 <div id="ticker-bar" class="ticker"><span id="ticker-text">Loading...</span></div>
@@ -250,7 +250,7 @@ tbody td{padding:8px 12px;vertical-align:middle}
   <div class="tab" onclick="showTab('groups')">Groups</div>
   <div class="tab" onclick="showTab('stats')">Statistics</div>
   <div class="tab" onclick="showTab('watched')" style="color:#d29922">&#9888; Watched</div>
-  <div class="tab" onclick="showTab('qilin')" style="color:#a371f7">&#9760; Qilin Direct</div>
+  <div class="tab" onclick="showTab('qilin')" style="color:#bc8cff">&#9760; Qilin Direct</div>
 </div>
 
 <!-- VICTIMS -->
@@ -307,7 +307,7 @@ tbody td{padding:8px 12px;vertical-align:middle}
       <option value="pending">Pending</option>
     </select>
     <button class="btn" onclick="loadQilin(true)">&#8635; Refresh</button>
-    <span style="color:#8b949e;font-size:10px;margin-left:8px">&#9679; Direct from <span style="color:#a371f7">Qilin .onion</span> · 10 min cache · via Tor</span>
+    <span style="color:#8b949e;font-size:10px;margin-left:8px">&#9679; Direct from <span style="color:#bc8cff">Qilin .onion</span> · 10 min cache · via Tor</span>
     <span class="count-badge" id="q-count"></span>
   </div>
   <div id="qilin-body"><div class="loading">Loading Qilin leak site...</div></div>
