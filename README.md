@@ -1,5 +1,7 @@
 # soc-ransomware
 
+> Ransomware victim/group tracker (ransomware.live mirror)
+
 ransomware.live mirror: victims and groups across the ecosystem.
 
 ## Documentation
